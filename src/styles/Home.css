@@ -1,14 +1,32 @@
  .container{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: rgb(205, 232, 245);
 
 }
 .countriesContainer {
     display: flex;
+    width: 90%;
     background-color: rgb(205, 232, 245);
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-around;
-    margin-top: 100px;
+    margin-top: 60px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+    background-color: rgb(39, 70, 83);
+    color: white;
 }

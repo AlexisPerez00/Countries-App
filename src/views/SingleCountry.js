@@ -22,7 +22,7 @@ const SingleCountry = () => {
             <div className="singleCountry">
                 <div className="country">
                     <h1>{data[0].name}</h1>
-                    <img src={data[0].flag}/>
+                    <img src={data[0].flag} alt="flag"/>
                 </div>
                 <div className="countryInfo">
                     <h3>Region</h3> <p>{data[0].region}</p>

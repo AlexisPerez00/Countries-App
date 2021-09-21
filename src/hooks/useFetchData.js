@@ -2,7 +2,6 @@ import { useEffect, useState} from "react"
 
 const useFetchData = url => {
     const [data, setData] = useState([]);
-    // const link = `https://restcountries.eu/rest/v2/name/${name}`
 
 
     const fetchApi = async () => {
@@ -18,7 +17,7 @@ const useFetchData = url => {
 
     useEffect(() => {
         fetchApi()
-    },[url])
+    })
 
     return {data}
 }

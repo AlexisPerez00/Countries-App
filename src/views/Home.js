@@ -38,9 +38,13 @@ const Home = () => {
     return (
         <div className="container">
             <Header/>
-
+            
             <SearchCountry/>
-
+            <div className="buttons">
+                <button className="previous" onClick={Prev}>Prevous</button>
+                <button className="next" onClick={Next}>Next</button>
+            </div>
+            
             <div className="countriesContainer">
                 
                 {data.slice(start, end).map((item) => (
@@ -51,9 +55,12 @@ const Home = () => {
                 />
             ))}
              </div>
-
-            <button onClick={Prev}>Prevous</button>
-            <button onClick={Next}>Next</button>
+            
+            <div className="buttons">
+                <button className="previous" onClick={Prev}>Prevous</button>
+                <button className="next" onClick={Next}>Next</button>
+            </div>
+            
            
         </div>
     )
