@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import "../../styles/SearchCountry.css"
 import { useState } from "react"
 
-const SearchCountry = ({setCountryName}) => {
+const SearchCountry = () => {
     const [country, setCountry] = useState("")
 
     const handleName = (e) => {

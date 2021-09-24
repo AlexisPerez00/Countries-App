@@ -28,3 +28,9 @@ img {
     width: 100%;
     padding: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+    .allcountries {
+        width: 30%;
+    }
+}
