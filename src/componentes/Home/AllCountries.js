@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import "../../styles/AllCountries.css"
 
 const AllCountries = ({ name, flag }) => {
-
     return (
         <div className="allcountries">
 

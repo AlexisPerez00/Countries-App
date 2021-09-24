@@ -11,8 +11,11 @@ const Home = () => {
 
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(10); 
+    // const countriesApiKey = "21f6adeb807d67c98d9c934adc582ae2"
+    // const {data} = useFetchData(`https://api.countrylayer.com/v2/all?access_key=${countriesApiKey}`)
 
-    const {data} = useFetchData(`https://restcountries.eu/rest/v2/all`)
+    const {data} = useFetchData(`https://restcountries.com/v2/all
+`)
 
 
     const Next = () => {
@@ -51,7 +54,7 @@ const Home = () => {
                 <AllCountries 
                 key= {item.name}
                 name= {item.name}
-                flag= {item.flag}
+                flag= {item.flags[1]}
                 />
             ))}
              </div>

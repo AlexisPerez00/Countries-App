@@ -22,14 +22,15 @@ function App() {
                 <Route path="/details/:country" exact>
                     <SingleCountry></SingleCountry>
                 </Route>
+              
+                <Route path="/:capital/weather">
+                    <CapitalWeather></CapitalWeather>
+                </Route>
 
                 <Route path="/*">
                     <NotFound></NotFound>
                 </Route>
-
-                <Route path="/capital-weather/:country" exact>
-                  <CapitalWeather></CapitalWeather>
-                </Route>
+                
             </Switch>
         </Router>
     </div>

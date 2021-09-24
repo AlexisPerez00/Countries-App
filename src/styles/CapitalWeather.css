@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(205, 232, 245);
+}
+.capitalWeather {
+    display: flex;
+    height: 80vh;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Anton', sans-serif;
+}
+.capitalWeather h1 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    padding: 10px;
+}
+
+.temperature {
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgb(109, 177, 206);
+    padding: 20px;
+    font-size: 28px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.temperature h4 {
+    padding: 5px;
+}
+
+.temperature img {
+    width: 100px;
+    padding: 0;
+}
+
+.buttonBack {
+    text-decoration: none;
+    font-size: 25px;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    padding: 10px;
+    background-color: rgb(109, 177, 206);
+}
