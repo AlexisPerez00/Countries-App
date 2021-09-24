@@ -6,7 +6,7 @@ const Header = () => {
         <header>
             <div className="leftPart">
                 <h3>Wiki-World</h3>                
-                <img src="https://cdn-icons-png.flaticon.com/512/5640/5640222.png"></img>
+                <img src="https://cdn-icons-png.flaticon.com/512/5640/5640222.png" alt="icon"></img>
 
             </div>
             
