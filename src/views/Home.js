@@ -11,11 +11,8 @@ const Home = () => {
 
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(10); 
-    // const countriesApiKey = "21f6adeb807d67c98d9c934adc582ae2"
-    // const {data} = useFetchData(`https://api.countrylayer.com/v2/all?access_key=${countriesApiKey}`)
 
-    const {data} = useFetchData(`https://restcountries.com/v2/all
-`)
+    const {data} = useFetchData(`https://restcountries.com/v3.1/all`)
 
 
     const Next = () => {
@@ -50,11 +47,11 @@ const Home = () => {
             
             <div className="countriesContainer">
                 
-                {data.slice(start, end).map((item) => (
+                {data.slice(start, end).map((item, index) => (
                 <AllCountries 
-                key= {item.name}
-                name= {item.name}
-                flag= {item.flags[1]}
+                key= {index}
+                name= {item.name.common}
+                flag= {item.flags.png}
                 />
             ))}
              </div>
