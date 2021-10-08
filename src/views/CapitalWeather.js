@@ -12,7 +12,7 @@ const CapitalWeather = () => {
     const {data} = useFetchData(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${capital}`) 
 
 
-    if(!data.current) {
+    if(!data.location) {
 
         return <Loading/>
     } 
