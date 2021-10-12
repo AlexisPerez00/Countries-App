@@ -4,23 +4,12 @@ import "../styles/CapitalWeather.css"
 import useFetchData from "../hooks/useFetchData"
 import { useParams } from "react-router"
 import { Link } from 'react-router-dom'
-// import { read } from '../hooks/useFetchAxios'
 
 const CapitalWeather = () => {
     const {capital} = useParams()
-    // const [info, setInfo] = useState([])
     const apiKey = "8a88406f21734422b8504112210507"
     const {data} = useFetchData(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${capital}`) 
    
-//     useEffect(() => {
-//         const myFunc = async () => {
-//             const data = await read(capital);
-      
-//             setInfo(data);
-//           };
-//           myFunc();
-    
-//   }, [capital]);
 
 if(!data.location) {
 
