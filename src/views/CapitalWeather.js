@@ -10,7 +10,7 @@ const CapitalWeather = () => {
     const {capital} = useParams()
     // const [info, setInfo] = useState([])
     const apiKey = "8a88406f21734422b8504112210507"
-    const {data} = useFetchData(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${capital}`) 
+    const {data} = useFetchData(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${capital}`) 
    
 //     useEffect(() => {
 //         const myFunc = async () => {
